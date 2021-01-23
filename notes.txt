@@ -1,0 +1,16 @@
+Checking Exit Status
+- Exit statuses ranges from 0 to 255
+- 0 = Success
+- Otherthan 0 = error condition
+
+$? - Return code of previously executed command
+echo "$?"
+
+operators
+HOST="google.com1"
+ping -c 1 $HOST && echo "$HOST is reachable"
+ping -c 1 $HOST || echo "$HOST is not reachable"
+
+in shell script
+exit 0 - success
+exit 1 - error condition
