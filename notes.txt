@@ -14,3 +14,20 @@ ping -c 1 $HOST || echo "$HOST is not reachable"
 in shell script
 exit 0 - success
 exit 1 - error condition
+
+wild card charaters
+* - matches zero or more charaters
+? - matches exactly one character
+[] - find the matching word between the charaters in the brackets eg: ca[nt]* can, cant, cat
+[3-6] or [a-n] - ranges
+Named charater classes
+    [[:alpha:]]/[[:alnum:]]/[[:digit]]/[[:lower:]]/[[:space:]]/[[:upper:]]
+! - exclude
+\ - escape character
+*\? - eg: done?
+
+[yY] - charater classes
+
+
+
+

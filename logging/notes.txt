@@ -1,0 +1,18 @@
+syslog (system logger)
+Categories
+ - Facilities (what type of system the message originated from)
+    - kern (messges from linux kernal)
+    - user (to use when there no clarity on which facility to use),
+    - mail (from the applications),daemon,auth,
+    - local0,local7 (for custom logs)
+ - Severities 
+    - emerg,alert,crit,err,warning,notice,info,debug
+
+Locations are configurable
+  - /var/log/messages
+  - /var/log/syslog
+
+logger "Message"
+logger -p local0.info "Message" (-p for priority)
+logger -t myscript -p local0.info "Message" (-t tag the log, -p process id)
+logger -i -t myscript "Message"
