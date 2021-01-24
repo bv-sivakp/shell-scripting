@@ -1,0 +1,37 @@
+-x prints commands as they execute
+x-trace tracing/print debugging
+-v prints shell input lines
+
+#!/bin/bash -x
+set -x
+ set +x to stop debugging
+
+-e Exit on error
+
+#!/bin/bash -ex
+#!/bin/bash -xe
+#!/bin/bash -e -x
+#!/bin/bash -x -e
+
+DEBUG - To create your own debugging code
+
+DEBUG=true
+DEBUG=false
+
+#!/bin/bash
+DEBUG="echo"
+$DEBUG ls
+
+debug() { # you can do betterment by redirecting output to log file with timestamp
+    echo "Executing: $@"
+    $@
+}
+
+debug ls
+
+PS4 shell script debugging
+
+PS4='+ $BASH_SOURCE : $LINENO ' # line number with name of the script
+
+
+

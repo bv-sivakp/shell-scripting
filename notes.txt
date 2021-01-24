@@ -28,6 +28,25 @@ Named charater classes
 
 [yY] - charater classes
 
+help set | less  for shell command options
+
+editors with sytax highlighting to avoid scripting errors during script writing
+
+vi/vim
+emacs
+nano
+
+cat -v <filename.sh> # returns file with carriage returns
+file script.sh # Bourne shell with CRLF line terminators
+
+To remove CRLF 
+dos2unix script.sh
+unix2dos script.sh
+
+file script.sh
+
+
+
 
 
 
