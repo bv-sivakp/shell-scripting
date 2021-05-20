@@ -1,0 +1,2 @@
+To check file and directory operations exists or not
+https://linuxize.com/post/bash-check-if-file-exists/
