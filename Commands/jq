@@ -1,0 +1,5 @@
+jq 
+====
+Two combine two json files
+jq -s '.[0] * .[1]' file1.json file2.json
+
