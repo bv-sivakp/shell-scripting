@@ -22,5 +22,14 @@ sed '/^[[:space:]]*$/d' input_file
 To remove new line characters from a file
 tr '\n' ' ' < file.csv > newfile.csv && mv newfile.csv file.csv
 
+AWK
+
+KeyValue="Key#Value"
+echo $(awk -F# '{print $1}' <<< $keyValue) # Key
+echo $(awk -F# '{print $1}' <<< $keyValue) # Value
+
+
+Learn about AWK
+https://www.tutorialspoint.com/awk/awk_quick_guide.htm
 
 
