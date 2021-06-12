@@ -1,0 +1,26 @@
+pwd - print working directory
+ls, ll , ls -al
+useradd
+passwd
+rm -rf (remove files and folders recursive with force)
+mkdir -p (creates if doesn't exist)
+cd / (change to root), cd ..
+rmdir
+ifconfig (for ip address)
+cat
+/etc/network/interfaces
+reboot
+poweroff
+sed -i "s/#ENV-NAME#/$DeployTarget/g" manifest.json (To update ENV_NAME globally and update the file)
+
+To remove empty lines from a file ( https://www.cyberciti.biz/faq/using-sed-to-delete-empty-lines/ )
+sed '/^$/d' <input-file>
+echo "LINE" | sed '/^$/d'
+echo "$VAR" | sed '/^$/d'
+sed '/^[[:space:]]*$/d' input_file
+
+To remove new line characters from a file
+tr '\n' ' ' < file.csv > newfile.csv && mv newfile.csv file.csv
+
+
+
