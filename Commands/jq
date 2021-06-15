@@ -1,5 +1,15 @@
 jq 
 ====
+
 Two combine two json files
 jq -s '.[0] * .[1]' file1.json file2.json
+
+add new row in existing json
+jq '. += {"keyname":"value"} ' original.json > temp-file.json && mv temp-file.json original.json
+
+add new value to an array existing JSON
+jq '.data.messages += [{"date": "2010-01-07T19:55:99.999Z", "xml": "xml_samplesheet_2017_01_07_run_09.xml", "status": "OKKK", "message": "metadata loaded into iRODS successfullyyyyy"}]'
+https://stackoverflow.com/questions/42245288/add-new-element-to-existing-json-array-with-jq
+
+
 
