@@ -45,6 +45,11 @@ unix2dos script.sh
 
 file script.sh
 
+To connect remote server
+ssh user@ip-address
+
+To copy files from local to linux machine
+scp file.txt user@ipaddress:<path>/.
 
 
 
